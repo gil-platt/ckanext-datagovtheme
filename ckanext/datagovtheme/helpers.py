@@ -82,6 +82,7 @@ def get_harvest_object_formats(harvest_object_id):
            }
 
 def get_dynamic_menu():
+    # production does return [] here
     filepath = ckan_tmp_path + '/dynamic_menu/'
     filename = filepath + 'menu.json'
     url = config.get('ckanext.geodatagov.dynamic_menu.url', 'https://www.data.gov/app/plugins/datagov-custom/wp_download_links.php')
@@ -515,6 +516,7 @@ def get_bureau_info(bureau_code):
     except ValueError:
         return None
 
+    # Whole section is set to return None
     for row in csv.reader(StringIO.StringIO(file_conent)):
         if agency == row[2].zfill(3) \
                 and bureau == row[3].zfill(2):

@@ -26,12 +26,13 @@ class DatagovTheme(p.SingletonPlugin):
         if package_type != 'dataset':
             return facets_dict
 
-        return OrderedDict([('groups', 'Topics'),
-                            ('vocab_category_all', 'Topic Categories'),
+        return OrderedDict([
+                            # ('groups', 'Topics'),
+                            # ('vocab_category_all', 'Topic Categories'),
                             ('metadata_type','Dataset Type'),
                             ('tags','Tags'),
                             ('res_format', 'Formats'),
-                            ('organization_type', 'Organization Types'),
+                            # ('organization_type', 'Organization Types'),
                             ('organization', 'Organizations'),
                             ('publisher', 'Publishers'),
                             ('bureauCode', 'Bureaus'),
@@ -41,12 +42,13 @@ class DatagovTheme(p.SingletonPlugin):
     def organization_facets(self, facets_dict, organization_type, package_type):
 
         if not package_type:
-            return OrderedDict([('groups', 'Topics'),
-                                ('vocab_category_all', 'Topic Categories'),
+            return OrderedDict([
+                                # ('groups', 'Topics'),
+                                # ('vocab_category_all', 'Topic Categories'),
                                 ('metadata_type','Dataset Type'),
                                 ('tags','Tags'),
                                 ('res_format', 'Formats'),
-                                ('groups', 'Topics'),
+                                # ('groups', 'Topics'),
                                 ('harvest_source_title', 'Harvest Source'),
                                 ('capacity', 'Visibility'),
                                 ('dataset_type', 'Resource Type'),
@@ -64,7 +66,7 @@ class DatagovTheme(p.SingletonPlugin):
         if not package_type:
             return OrderedDict([(key, 'Categories'),
                                 ('metadata_type','Dataset Type'),
-                                ('organization_type', 'Organization Types'),
+                                # ('organization_type', 'Organization Types'),
                                 ('tags','Tags'),
                                 ('res_format', 'Formats'),
                                 ('organization', 'Organizations'),
