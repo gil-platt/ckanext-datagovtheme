@@ -171,6 +171,11 @@ a {
 .masthead .container .top:after {
     clear: both;
 }
+
+#header-logo {
+    max-width: 90px;
+    max-height: 90px;
+}
 .masthead .container .logo {
     *zoom: 1;
     float: left;
