@@ -154,7 +154,6 @@ a {
 .masthead .container .logo {
     *zoom: 1;
     float: left;
-    width:220px;
 }
 .masthead .container .logo:before,
 .masthead .container .logo:after {
@@ -169,14 +168,14 @@ a {
     display: block;
     float: left;
     height: 53px;
-    background-image: url("../images/logo.png");
+    background-image: url("../images/doi_logo.png");
     width: 204px;
 }
 .masthead .container .logo a {
     display: block;
     float: left;
     height: 48px;
-    background: url("../images/logo.svg") no-repeat scroll 0 0 / contain  rgba(0, 0, 0, 0);
+    background: url("../images/doi_logo.png") no-repeat scroll 0 0 / contain  rgba(0, 0, 0, 0);
     width: 200px;
 }
 .masthead .container .logo a span {
@@ -1184,7 +1183,7 @@ footer.site-footer {
     background: url("http://data.gov/wp-content/themes/roots-nextdatagov/assets/img/logo.svg") no-repeat scroll 0 0 / contain  rgba(0, 0, 0, 0);
 }
 a.logo-brand {
-    background: url("../images/logo.png") no-repeat scroll left center;
+    background: url("../images/doi_logo.png") no-repeat scroll left center;
     margin-left: 15px;
     overflow: hidden;
     text-indent: -9999em;
